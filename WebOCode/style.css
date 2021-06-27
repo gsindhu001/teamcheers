@@ -1,0 +1,884 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+/*...................................... navbar stylings..........................................*/
+#logo{
+  height:50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-right: 10px;
+
+
+}
+.nav-wrapper a{
+    color:black !important;
+    padding-top: 13px !important;
+}
+.nav-wrapper ul li a:hover{
+  background-color: white !important;
+  
+}
+.brand-logo{
+    margin-top: auto !important;
+    padding-top: 13px !important;
+    margin-bottom: auto !important;
+}
+.nav-wrapper{
+    height: 95px !important ;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+    background-color: white !important;
+}
+/*.........................sideNavbar stylings....................................................*/
+.user-view span{
+    color:black !important;
+}
+.user-view img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 70px 70px !important;
+    border-color: black;
+
+}
+#slide-out{
+  background:linear-gradient(to bottom,#f7f8f8 8%, #acbb78 92%);
+}
+  /*......................scrolling effect on navbar...............................*/
+  .scrolling-active .nav-wrapper{
+    background-color: black !important;
+ height:65px !important;
+}
+.scrolling-active .nav-wrapper .navlinks li a{
+ color:white !important;
+ padding-top: 2px !important;
+}
+.scrolling-active .nav-wrapper .brand-logo{
+ color:white !important;
+ padding-top: 2px !important;
+}
+.scrolling-active .nav-wrapper .navlinks li a:hover{
+ background-color: white;
+ color:black !important;
+}
+
+.scrolling-active .nav-wrapper .navlinks li a:hover .material-icons{
+background-color: white;
+color:black !important;
+}
+
+
+.scrolling-active .nav-wrapper .material-icons{
+color:white !important;
+
+}
+
+/* Header */
+.header-img{
+  margin:0px !important;
+  padding :0px!important;
+  background-color:rgba(0, 0, 0, 0.5);
+  background-image: url("images/HomePage/homepage2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 900px;
+  display:flex;
+ 
+  align-items:center;
+}
+.header-content{
+ padding: 10px;
+margin: auto !important;
+ text-align: center;
+}
+.header-title{
+ text-align:center;
+ color:white;
+ font-size: 2em;
+ font-weight: bold;
+ font-family: 'Times New Roman', Times, serif;
+}
+/*................................Dropdown........................*/
+
+.dropdown-content,#dropdown1{
+background-color: black ;
+width: 170px !important;
+}
+#dropdown1 .droplinks a{
+color: white !important;
+}
+#dropdown1 .droplinks a:hover{
+ color: black !important;
+}
+#dropdown2 {
+   background:  linear-gradient(to bottom,#f7f8f8 8%, #acbb78 92%);
+ };
+#dropdown2 .droplinks a:hover{
+   background-color: #acbb78 !important;
+   color: green !important;
+}
+/* Explore Button */
+
+.explorebutton{
+ width: 120px;
+ height: 50px;
+ border-radius: 10px;
+ position: relative;
+ overflow:hidden;
+ background :linear-gradient(to right,#2980b9 0%,#6dd5fa 80%,#ffffff 100%);
+ margin:auto !important;   
+}
+.explorebutton::before{
+ content:" ";
+ position: absolute;
+ background-color: #EEE;
+ padding:50%;
+ border-radius: 50%;
+ left:30%;
+ top:40%;
+ transform: translate(-30%,-30%) scale(1);
+ opacity: 0;
+ transition: transform 1s,opacity 1s;
+
+}
+.explorebutton:active::before{
+ transition: 0s;
+ opacity:1;
+ transform: translate(-30%,-30%)scale(0);
+}
+/*..........................................Gallery......................................*/
+.galleryContainer{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ justify-content:space-evenly;
+ 
+}
+.galleryContainer .card{
+ width: 300px;
+ height: 360px;
+float :inline-start !important;
+ margin-top: 10px;
+ margin-bottom: 8px;
+ padding-left: 10px;
+ padding: 10px;
+
+}
+
+/* Living Room */
+.collect{
+  padding:10px;
+  margin:auto;
+}
+.collect h4{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:rgb(70, 10, 70);
+}
+.galleryContainer{
+  display:flex;
+  justify-content:space-around;
+}
+.galleryContainer .card-image1{
+ width: 100%;
+ height: 280px;
+ background-image: url("images/Living Room/sofa1.jpg");
+ background-repeat: no-repeat;
+ background-size:cover;
+}
+.galleryContainer .card-image2{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/carpets1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image3{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/chairs1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image4{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/coffeetable1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image5{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/sofa3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image6{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/carpets3.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image7{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/chairs4.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image8{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Living Room/coffeetable3.jpeg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+
+ /* Bedroom */
+
+ .galleryContainer .card-image9{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/bed5.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+
+ .galleryContainer .card-image10{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/bookshelf2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image11{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/mirrortable1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image12{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/sidetable1.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image13{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/bed8.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image14{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/bookshelf3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image15{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/mirrortable2.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+ .galleryContainer .card-image16{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BedRoom/sidetable3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+
+ /* Kitchen */
+
+ .galleryContainer .card-image17{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/cabinets1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image18{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/cabinets3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image19{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/dinnertable1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image20{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/dinnertable2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image21{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/cutlery1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image22{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/cutlery2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image23{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/crockery3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image24{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Kitchen/crockery2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ 
+
+ /* BathRoom */
+ h4,h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+
+ .galleryContainer .card-image25{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/counters1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image26{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/counters3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image27{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/mirrors5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image28{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/mirrors2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image29{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/hangers1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image30{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/BathRoom/hangers3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ /* Home Appliances */
+ /* Smart Appliances  */
+
+ .galleryContainer .card-image31{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/securitycamera1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image32{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/securitycamera3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image33{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/alexa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image34{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/googlehome1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image35{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/smartlights1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image36{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/smartlights2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image37{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/smarttv3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image38{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/Smart Appliances/smarttv2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+/* general appliances */
+.galleryContainer .card-image39{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/fridge1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image40{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/fridge2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image41{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/washingmachine1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image42{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/washingmachine4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image43{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/coffeemaker1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image44{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/coffeemaker3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image45{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/oven1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ } .galleryContainer .card-image46{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/oven3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image47{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/grinder1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+ .galleryContainer .card-image48{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Appliances/General Appliances/grinder3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ /* Home Decor */
+ .galleryContainer .card-image49{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/plants1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image50{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/plants3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image51{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/paintings1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image52{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/paintings2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image53{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/wallclocks1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image54{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/wallclocks2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image55{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/showpiece1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image56{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/showpiece2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image57{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/lights1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image58{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/lights3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image59{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/lamps1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .galleryContainer .card-image60{
+  width: 100%;
+  height: 280px;
+  background-image: url("images/Home Decor/lamps2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+
+/*.....................................contactUs.........................................*/
+ .contactUs {
+     margin: 5px;
+     margin-top: 10px ;
+     padding: 25px;
+ }
+
+
+ .contactHead{
+     text-align: center;
+ }
+ .contactContainer{
+     margin: 5px;
+     padding: 10px;
+     display: flex;
+     justify-content:space-around;
+     flex-wrap:wrap;
+ }
+ .findUs{
+     padding: 10px;
+ }
+ .contactUs .card{
+    
+     width: 450px;
+     height: 475px;
+ }
+
+  
+  form{
+    display: inline-block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    color: black;
+  }
+
+  input{
+    display: inline-block;
+    
+  }
+  
+  input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 17px;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin: 2px;
+  
+  }
+  
+  input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #45a059;
+  }
+  
+  input[type=text]{
+    width: 100%;
+    padding: 3px 10px;
+    margin: 8px 0;
+    border: 2px solid black;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+/* about us */
+#about{
+  padding-left: 20px;
+  margin:20px;
+}
+#about h6{
+  padding-top:30px;
+}
+#about h4{
+  padding-left:20px;
+  margin-left:10px;
+}
+/* Footer */
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.instagram:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+/*hr galler*/
+.gallery hr{
+  border-top-color: #bbb;
+  opacity:0.5
+  
+}
+about .aboutInfo{
+
+    display:flex;
+}
+
